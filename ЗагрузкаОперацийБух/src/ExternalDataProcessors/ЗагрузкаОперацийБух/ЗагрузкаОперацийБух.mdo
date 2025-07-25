@@ -11,26 +11,67 @@
   <comment>0.0.1</comment>
   <containedObjects classId="c3831ec8-d8d5-4f93-8a22-f9bfae07327f" objectId="3866cb9e-e920-4255-bce6-e50c42d8b23e"/>
   <defaultForm>ExternalDataProcessor.ЗагрузкаОперацийБух.Form.Форма</defaultForm>
-  <attributes uuid="3528a932-45b4-4a7d-8f52-fb2fa37e28aa">
-    <name>РежимСовместимости</name>
+  <attributes uuid="a7873510-1cd4-4fa5-bdf4-5d3a47d3fe5a">
+    <name>ДатаНачала</name>
     <synonym>
       <key>ru</key>
-      <value>Режим совместимости</value>
+      <value>Дата начала</value>
     </synonym>
     <type>
-      <types>String</types>
-      <stringQualifiers>
-        <length>20</length>
-      </stringQualifiers>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
     </type>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
   </attributes>
-  <attributes uuid="6d61a7f9-58c0-48ec-bf78-f23211b6011d">
-    <name>МодальностьРазрешена</name>
+  <attributes uuid="d0659d50-9171-4deb-8fe2-2969fc33f9e9">
+    <name>ДатаОкончания</name>
     <synonym>
       <key>ru</key>
-      <value>Модальность разрешена</value>
+      <value>Дата окончания</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="9d52fb18-c1b5-4d44-888c-4108f9724ae9">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <createOnInput>DontUse</createOnInput>
+  </attributes>
+  <attributes uuid="77243644-5c2e-4aab-94ad-897f49aac4c3">
+    <name>УказыватьОтветственногоЕслиНеНайден</name>
+    <synonym>
+      <key>ru</key>
+      <value>Указывать ответственного если не найден</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Пользователи</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="ddd0c919-8631-4fbd-8d4c-f18e20602c4c">
+    <name>ОтбиратьСтрокиПоФильтруПоКомментарию</name>
+    <synonym>
+      <key>ru</key>
+      <value>Отбирать строки по фильтру по комментарию</value>
     </synonym>
     <type>
       <types>Boolean</types>
@@ -38,30 +79,29 @@
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
   </attributes>
-  <attributes uuid="90616328-d933-4541-bf30-1fd18b308b6e">
-    <name>ПутьКХранилищу</name>
+  <attributes uuid="18f4f2d9-991d-4322-882a-78c2297eb29b">
+    <name>ФильтрПоКомментарию</name>
     <synonym>
       <key>ru</key>
-      <value>Путь к хранилищу</value>
-    </synonym>
-    <type>
-      <types>String</types>
-      <stringQualifiers/>
-    </type>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-  </attributes>
-  <attributes uuid="3bba78ae-f5d7-4bfa-b51a-da331e93fa1d">
-    <name>ВерсияПриложения</name>
-    <synonym>
-      <key>ru</key>
-      <value>Версия приложения</value>
+      <value>Фильтр по комментарию</value>
     </synonym>
     <type>
       <types>String</types>
       <stringQualifiers>
-        <length>15</length>
+        <length>500</length>
       </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="0c162575-33dd-4f57-b58c-52fdf548f62e">
+    <name>ОтключитьКонтрольОшибок</name>
+    <synonym>
+      <key>ru</key>
+      <value>Отключить контроль ошибок</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
     </type>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
@@ -71,15 +111,6 @@
     <synonym>
       <key>ru</key>
       <value>Форма</value>
-    </synonym>
-    <usePurposes>PersonalComputer</usePurposes>
-    <usePurposes>MobileDevice</usePurposes>
-  </forms>
-  <forms uuid="b455fb13-ffb7-42dd-a653-a383099370ed">
-    <name>ФормаТаблицаЗначений</name>
-    <synonym>
-      <key>ru</key>
-      <value>Таблица значений</value>
     </synonym>
     <usePurposes>PersonalComputer</usePurposes>
     <usePurposes>MobileDevice</usePurposes>

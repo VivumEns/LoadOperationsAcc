@@ -54,7 +54,7 @@
 	<defaultFormatIndex>6</defaultFormatIndex>
 	<height>4</height>
 	<vgRows>4</vgRows>
-	<font bold="false" faceName="Arial" height="14" italic="false" kind="Absolute" scale="100" strikeout="false" underline="false"/>
+	<font faceName="Arial" height="14" bold="false" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
 	<format>
 		<width>43</width>
 	</format>
