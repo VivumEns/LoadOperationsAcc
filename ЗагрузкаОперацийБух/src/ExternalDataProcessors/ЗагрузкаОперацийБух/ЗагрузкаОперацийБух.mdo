@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<mdclass:ExternalDataProcessor xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="b5360a6a-4a75-40f5-a4aa-567f229ef0a0">
+<mdclass:ExternalDataProcessor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="b5360a6a-4a75-40f5-a4aa-567f229ef0a0">
   <producedTypes>
     <objectType typeId="4457828f-a5b0-49d1-9f03-df50fefa8d56" valueTypeId="a88352a3-9667-4419-8eb2-5b8a78c9c666"/>
   </producedTypes>
@@ -8,5 +8,80 @@
     <key>ru</key>
     <value>Загрузка ОперацийБух</value>
   </synonym>
+  <comment>0.0.1</comment>
   <containedObjects classId="c3831ec8-d8d5-4f93-8a22-f9bfae07327f" objectId="3866cb9e-e920-4255-bce6-e50c42d8b23e"/>
+  <defaultForm>ExternalDataProcessor.ЗагрузкаОперацийБух.Form.Форма</defaultForm>
+  <attributes uuid="3528a932-45b4-4a7d-8f52-fb2fa37e28aa">
+    <name>РежимСовместимости</name>
+    <synonym>
+      <key>ru</key>
+      <value>Режим совместимости</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>20</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="6d61a7f9-58c0-48ec-bf78-f23211b6011d">
+    <name>МодальностьРазрешена</name>
+    <synonym>
+      <key>ru</key>
+      <value>Модальность разрешена</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="90616328-d933-4541-bf30-1fd18b308b6e">
+    <name>ПутьКХранилищу</name>
+    <synonym>
+      <key>ru</key>
+      <value>Путь к хранилищу</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="3bba78ae-f5d7-4bfa-b51a-da331e93fa1d">
+    <name>ВерсияПриложения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Версия приложения</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>15</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <forms uuid="eed9e2cb-5b28-48fa-8153-2c8c7740076e">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="b455fb13-ffb7-42dd-a653-a383099370ed">
+    <name>ФормаТаблицаЗначений</name>
+    <synonym>
+      <key>ru</key>
+      <value>Таблица значений</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
 </mdclass:ExternalDataProcessor>

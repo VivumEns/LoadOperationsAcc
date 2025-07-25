@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suppress:SuppressGenericObject xmlns:suppress="http://g5.1c.ru/v8/dt/check/suppress/model" fqn="ExternalDataProcessor.ЗагрузкаОперацийБух">
+  <suppressions key="com.e1c.v8codestyle.bsl:module-accessibility-at-client" value="true"/>
+  <suppressions key="com._1c.g5.v8.dt.bsl:bsl-legacy-check-execute-statement" value="true"/>
+  <suppressions key="com.e1c.v8codestyle.bsl:server-execution-safe-mode" value="true"/>
+  <suppressions key="com.e1c.v8codestyle.bsl:bsl-variable-name-invalid" value="true"/>
+</suppress:SuppressGenericObject>
