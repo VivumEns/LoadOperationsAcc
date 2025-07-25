@@ -4,4 +4,7 @@
   <suppressions key="com._1c.g5.v8.dt.bsl:bsl-legacy-check-execute-statement" value="true"/>
   <suppressions key="com.e1c.v8codestyle.bsl:server-execution-safe-mode" value="true"/>
   <suppressions key="com.e1c.v8codestyle.bsl:bsl-variable-name-invalid" value="true"/>
+  <suppressions key="com.e1c.v8codestyle.bsl:module-structure-method-in-regions" value="true"/>
+  <suppressions key="com.e1c.v8codestyle.bsl:module-structure-form-event-regions" value="true"/>
+  <suppressions key="com.e1c.v8codestyle.bsl:form-self-reference" value="true"/>
 </suppress:SuppressGenericObject>
