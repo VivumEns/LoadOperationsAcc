@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:ExternalDataProcessor xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="b5360a6a-4a75-40f5-a4aa-567f229ef0a0">
+  <producedTypes>
+    <objectType typeId="4457828f-a5b0-49d1-9f03-df50fefa8d56" valueTypeId="a88352a3-9667-4419-8eb2-5b8a78c9c666"/>
+  </producedTypes>
+  <name>ЗагрузкаОперацийБух</name>
+  <synonym>
+    <key>ru</key>
+    <value>Загрузка ОперацийБух</value>
+  </synonym>
+  <containedObjects classId="c3831ec8-d8d5-4f93-8a22-f9bfae07327f" objectId="3866cb9e-e920-4255-bce6-e50c42d8b23e"/>
+</mdclass:ExternalDataProcessor>
